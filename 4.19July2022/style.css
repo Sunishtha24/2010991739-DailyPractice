@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(
+        to bottom,
+        rgb(204,229,255),
+        rgba(204,229,255,0.4)
+    );
+    font-size: 1.15em;
+    text-align: justify;
+
+}
+
+#myt{
+    color:chocolate;
+}
+
+.h1e{
+    color:darkslateblue;
+}
