@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn(){
+            var b= document.getElementById("n1").value;
+            var t= document.getElementById("n2").value;
+            b=Number(b);
+            t=Number(t);
+            if(b>t){
+                var ball= parseInt( b/t);
+                var rem =b%t;
+
+            }
+            document.getElementById("p1").innerHTML="No. of balls are: " + ball + " Remaining balls are: "+rem;
+        }
+    </script>
+</head>
+<body>
+    Total Balls <input type="text" name="n1" id="n1"><br>
+    No. of Members <input type="text" name="n2" id="n2"><br>
+    <button onclick="fn()">Click</button> 
+    <p id="p1"></p>
+</body>
+</html>
