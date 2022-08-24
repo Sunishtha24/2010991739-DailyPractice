@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        function fn(){
+            var n=document.getElementById("num").value;
+            const arr=String(n).split('').map(str => Number(str));
+            console.log(arr);
+            var m=arr.length;
+            if(m>5 || m<5){
+                alert("Please enter a 5-DIGIT number only");
+                document.getElementById("num").value("");
+            }
+            var sum=0;
+            for(i=0; i<m; i++){
+                sum+=arr[i];
+            }
+            var length=sum, breadth=sum;
+            var br=sum/5;
+            
+            document.getElementById("sq").style.height=sum+"px";
+            document.getElementById("sq").style.width=sum+"px";
+            document.getElementById("sq").style.borderRadius=br+"%";
+            
+        }
+    </script>
+</head>
+<body>
+    <p id="p1"><b>Enter a number: </b> </p>
+    <input type="number" name="num" id="num" placeholder="Enter a 5-digit number"><br>
+    <button onclick="fn()" id="btn"><b>Click</b></button>
+    <div id="sq"></div>
+</body>
+</html>
