@@ -5,8 +5,8 @@ import Header from "./component/Header"
 function App() {
   return (
       <div className="container">
-        <Header title='Mukesh'/>
-        {/* <Header title1='hi'/> */}
+        <Header/>
+        {/* <Button text="Hello1" color="green" onClick={onClick}/> */}
 
         
       </div>

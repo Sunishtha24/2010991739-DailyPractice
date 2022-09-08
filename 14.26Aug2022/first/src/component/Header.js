@@ -1,5 +1,9 @@
 import './Header.css'
 const Header=({title})=>{
+    const onClick=(e)=>{
+        console.log("click",e);
+    };
+
     return(
         <header>
             <h1 style={headingStyle}>Hello {title}</h1>
